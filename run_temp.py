@@ -36,7 +36,7 @@ model = BertForSequenceClassification.from_pretrained(model_name, num_labels=18)
 
 # Device configuration
 model.to(device)
-new_text = request.text
+new_text = "hello"
 predictions = predict(new_text, model, tokenizer)
 
 # Define the categories
